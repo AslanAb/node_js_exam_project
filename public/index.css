@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 115px;
+    background-color: #5a4c08;
+    padding: 0 13%;
+    box-sizing: border-box;
+}
+
+.logoImg {
+    width: 168px;
+    height: 100%;
+}
+
+.menu {
+    width: 55%;
+    height: 100%;
+}
+
+.login {
+    width: fit-content;
+    height: fit-content;
+}
+
+.buttonLogin {
+    height: 56px;
+    width: 168px;
+    min-width: fit-content;
+}
+.buttonLogout {
+    height: 56px;
+    width: 168px;
+    min-width: fit-content;
+}
+
+.buttonMenu {
+    height: 36px;
+    width: 31%;
+    min-width: fit-content;
+}
+
+
+.buttonStyle {
+    background-color: #333333;
+    color: #f1c50e;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 800;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+
+.buttonStyle:hover {
+    background-color: #f1c50e;
+    color: #333333;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.sa {
+    justify-content: space-around;
+}
+
+.aiCenter {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    min-height: 80vh;
+    padding: 0 13%;
+    box-sizing: border-box;
+}
+
+.mainLeft {
+    width: 20%;
+    height: auto;
+}
+
+.p1 {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 7px 0;
+}
+
+.portfileCard {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+
+.santaImg {
+    width: 88px;
+    margin-top: 50;
+}
+
+.buttonChangePortfileData {
+    width: 90%;
+    height: 36px;
+}
+
+.settingImg {
+    width: 25px;
+}
+
+.mainMid {
+    width: 60%;
+    height: auto;
+    border-left: 1px solid #33333392;
+    border-right: 1px solid #33333392;
+}
+
+.post {
+    width: 97%;
+    height: auto;
+    padding: 0 30px 30px;
+    margin: 30px 0;
+    box-sizing: border-box;
+    border: 2px solid #333333db;
+    box-shadow: 0px 0px 10px #333333db;
+}
+.autorsDiv {
+    width: 97%;
+    height: auto;
+    padding: 0 30px 30px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #333333db;
+    box-shadow: 0px 0px 10px #333333db;
+}
+
+.postTop {
+    overflow: hidden;
+    position: relative;
+    max-height: 150px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.checker {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: #777;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.checker~.label::after {
+    content: 'Показать весь пост';
+}
+
+.checker:checked~.label::after {
+    content: 'Скрыть часть поста';
+}
+
+.checker:checked~.postTop {
+    max-height: none;
+}
+
+
+.buttonLikePost {
+    width: 140px;
+    background-color: #333333;
+    color: #f1c50e;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-left: 10px;
+}
+
+.buttonLikePost:hover {
+    background-color: #f1c50e;
+    color: #333333;
+}
+
+.divBorder {
+    border-left: 1px solid #000000;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.postSpan {
+    cursor: pointer;
+}
+
+.postSpan:hover {
+    text-decoration: underline;
+}
+
+.mainRight {
+    width: 20%;
+    height: auto;
+    align-items: center;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+.select {
+    width: 60%;
+    margin-bottom: 7px;
+}
+.select1 {
+    width: 60%;
+    margin-bottom: 7px;
+}
+
+.sort {
+    width: 90%;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.search {
+    width: 90%;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.inputSearch {
+    margin-bottom: 7px;
+}
+
+.footer {
+    width: 100%;
+    height: 115px;
+    background-color: #5a4c08;
+}
+
+
+.loginPageMain{
+    width: 80%;
+    height: auto;
+}
+.loginPageMainDiv {
+    width: 45%;
+    height: 600px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 50px 0;
+    padding: 30px 20px;
+}
+
+.submitRegistration {
+    width: 100%;
+    height: 35px;
+}
+.loginButton {
+    width: 100%;
+    height: 35px;
+}
+.buttonPublic {
+    width: 100%;
+    height: 35px;
+}
+.registrationButton {
+    width: 100%;
+    height: 35px;
+}
+.m20 {
+    margin-bottom: 20px;
+}
+
+.loginPageMainDivLeft {
+    background-color: hwb(47 17% 53%);
+}
+
+.loginPageMainDivRight {
+    background-image: url(http://localhost:8090/static/images/login.jpg);
+    background-size: cover;
+}
+.postTemplate > h2 {
+    font-size: 10px;
+}
+.hide {
+    display: none;
+}
+
+.textInput {
+    min-height: 300px;
+}
+
+.hidden_div {
+    display: none;
+    width: 80%;
+    height: 80vh;
+    position: fixed;
+    z-index: 2;
+}
+
+.hidden_div_user{
+    display: none;
+    width: 80%;
+    height: 80vh;
+    position: fixed;
+    z-index: 2;
+}
+
+.userDiv1 {
+    height: 30px;
+    padding-top: 30px;
+}
+
+.buttonNewPost {
+    margin-top: 15px;
+}
+.countOfLikes {
+    margin-left: 10px;
+}

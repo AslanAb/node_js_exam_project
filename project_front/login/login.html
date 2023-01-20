@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="stylesheet" href="http://localhost:8090/static/index.css">
+</head>
+
+<body>
+    <header class="header flex sb aiCenter">
+        <div class="logoImg">
+            <img src="http://localhost:8090/static/images/logo.jpg" alt="" class="logoImg">
+        </div>
+        <div class="menu flex sb aiCenter">
+            <button class="postsPage buttonMenu buttonStyle">Лента новостей</button>
+            <button class="usersPage buttonMenu buttonStyle">Список пользователей</button>
+            <button class="accountPage buttonMenu buttonStyle">Личный кабинет</button>
+        </div>
+        <div class="login">
+            <button class="buttonStyle buttonLogin">Войти</button>
+            <button class="buttonStyle buttonLogout hide">Выйти</button>
+        </div>
+    </header>
+    <main class="main flex aiCenter sa">
+        <div class="flex sb loginPageMain">
+            <div class="loginPageMainDiv loginPageMainDivLeft">
+                <div class="flex center">
+                    <p class="p2">Войти в аккаунт</p>
+                </div>
+                <form action="" class="flex column m20">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" class="m20">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password" class="m20">
+                    <button type="button" class="loginButton buttonStyle">Войти</button>
+                </form>
+                <button type="button" class="registrationButton buttonStyle">Зарегистрироваться</button>
+            </div>
+            <div class="loginPageMainDiv loginPageMainDivRight"></div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script src="./login.js"></script>
+</body>
+
+</html>

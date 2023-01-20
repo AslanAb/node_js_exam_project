@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="http://localhost:8090/static/index.css">
+</head>
+
+<body>
+    <header class="header flex sb aiCenter">
+        <div class="logoImg">
+            <img src="http://localhost:8090/static/images/logo.jpg" alt="" class="logoImg">
+        </div>
+        <div class="menu flex sb aiCenter">
+            <button class="postsPage buttonMenu buttonStyle">Лента новостей</button>
+            <button class="usersPage buttonMenu buttonStyle">Список пользователей</button>
+            <button class="accountPage buttonMenu buttonStyle">Личный кабинет</button>
+        </div>
+        <div class="login">
+            <button class="buttonStyle buttonLogin" data-path="login">Войти</button>
+            <button class="buttonStyle buttonLogout hide" data-path="login">Выйти</button>
+        </div>
+    </header>
+    <main class="main flex aiCenter sa">
+        <div class="flex sb loginPageMain">
+            <div class="loginPageMainDiv loginPageMainDivLeft">
+                <div class="flex center">
+                    <p class="p2">Регистрация</p>
+                </div>
+                <form action="" class="flex column ">
+                    <label for="nameR">Ваше имя</label>
+                    <input type="text" id="nameR" name="nameR" class="m20">
+                    <label for="surnameR">Ваша фамилия</label>
+                    <input type="text" id="surnameR" name="surnameR" class="m20">
+                    <label for="emailR">Почтовый адрес</label>
+                    <input type="email" name="emailR" id="emailR" class="m20">
+                    <label for="passwordR">Пароль</label>
+                    <input type="password" name="password" id="passwordR" class="m20">
+                    <button type="button" class="submitRegistration buttonStyle">Зарегистрироваться</button>
+                </form>
+            </div>
+            <div class="loginPageMainDiv loginPageMainDivRight"></div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script src="./registration.js"></script>
+</body>
+
+</html>
