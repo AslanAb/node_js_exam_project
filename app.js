@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use("/static", express.static(__dirname + "/public"));
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.niiuuok.mongodb.net/?retryWrites=true&w=majority', (err) => {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.ywp8ipp.mongodb.net/', (err) => {
     if (err) {
         console.log("mongodb err", err)
     } else {
